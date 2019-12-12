@@ -1,6 +1,6 @@
 # How to deploy a react app on Github
 
-First run the following command to create a repository names my-app using ```create-react-app```: 
+For starters, run the following command to create a repository names my-app using ```create-react-app```: 
 
 ```
 $ npm init react-app my-app
@@ -16,7 +16,7 @@ $ npm install gh-pages --save-dev
 Add the following property at the top of your ```package.json``` file :
 ```http://{username}.github.io/{repo-name}```
 
-And add to the scripts : 
+Also add to the scripts : 
 ```
 "scripts": {
 //...
@@ -43,5 +43,9 @@ Finally, to deploy your application you can run :
 ```
 $ npm run deploy
 ```
+## References : 
+[Official react doc](https://create-react-app.dev/docs/deployment/#github-pages-https-pagesgithubcom)
 
-NB : deployment works just fine, but I can't push my work onto the master branch (might be a problem ?) cf. https://www.freecodecamp.org/forum/t/question-about-deploying-react-pages/179636 for possible solution 
+## Notes : 
+
+The master branch is supposed to hold the source code, while the gh-pages branch holds the built code. Though the deployment works just fine in my case, I can't seem to be able to push my source code onto the master branch (might be a problem ?) cf. https://www.freecodecamp.org/forum/t/question-about-deploying-react-pages/179636 for possible solution.
